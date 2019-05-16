@@ -1,7 +1,6 @@
-function test(args) {
-    console.log(typeof args);
+function test(count = 5) {
+    console.log("*".repeat(count));
 }
 
-test(5);
-test('text');
-test([]);
+test(2);
+test();
