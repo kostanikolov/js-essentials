@@ -1,13 +1,14 @@
-function repeatIt(count, func) {
-    for (let i = 1; i <= count; i++) {
-        func(i);
+function test() {
+}
+
+test();
+
+function hypotenuse(a, b) {
+    function square(num) {
+        return num * num;
     }
+
+    return Math.sqrt(square(a) + square(b));
 }
 
-let startFunc = function(i) {
-    console.log("**".repeat(i));
-}
-
-repeatIt(3, startFunc);
-console.log('===========');
-repeatIt(3, function(x) { console.log(2 * x + 3); });
+console.log(hypotenuse(3, 4));
