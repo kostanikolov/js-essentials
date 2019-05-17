@@ -1,6 +1,3 @@
-function test(count = 5) {
-    console.log("*".repeat(count));
+function test() {
+    
 }
-
-test(2);
-test();
