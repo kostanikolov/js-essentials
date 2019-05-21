@@ -9,17 +9,12 @@
 <body>
     <h1>Introduction to DOM!</h1>
     
-    <ul>
-        <li>DOM Methods Example</li>
-        <li>DOM Properties Example</li>
-    </ul>
+    <p id="first">First paragraph</p>
 
     <script>
-        let liElement = document.getElementsByTagName('li')[1];
-        console.log(liElement);
-        liElement.innerHTML += ' - DONE';
-
-        document.
+        let paragraphElement = document.getElementById("first");
+        paragraphElement.setAttribute("babaYaga", false);
+        paragraphElement.setAttribute("style", "font-size: 24px");
     </script>
 </body>
 
