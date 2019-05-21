@@ -1,9 +1,10 @@
 function test(args) {
-    let arr = [ "John", "Peter", "Sally", "Jane" ];
-    let myJSON = JSON.stringify(arr);
-    console.log(typeof myJSON)
-
     
+    let sum = 0;
+    for (let i = 0; i < args.length; i++) {
+        sum += args[i];
+    }
+    console.log(sum);
 }
 
-test();
+test([11,12,13]);
