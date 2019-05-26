@@ -12,7 +12,6 @@ function solve() {
 
     let historyDiv = document.getElementById("history");
     
-    // for (let card of playerOneDiv.children) {
     for (let card = 0; card < playerOneDiv.length; card++) {
         let cardImgElement = playerOneDiv[card];
 
@@ -32,8 +31,6 @@ function solve() {
                     leftCardImg.setAttribute("style", "border: 2px solid green");
                     rightCardImg.setAttribute("style", "border: 2px solid red");
 
-                    // let newSpanElement = document.createElement("span");
-                    // newSpanElement.innerHTML = `[${leftCardValue} vs ${rightCardValue}] `;
                     historyDiv.innerHTML += `[${leftCardValue} vs ${rightCardValue}] `;
 
                     leftCardChoice.innerHTML = "";
@@ -42,8 +39,6 @@ function solve() {
                     rightCardImg.setAttribute("style", "border: 2px solid green");
                     leftCardImg.setAttribute("style", "border: 2px solid red");
 
-                    // let newSpanElement = document.createElement("span");
-                    // newSpanElement.innerHTML = `[${leftCardValue} vs ${rightCardValue}] `;
                     historyDiv.innerHTML += `[${leftCardValue} vs ${rightCardValue}] `;
 
                     leftCardChoice.innerHTML = "";
@@ -53,7 +48,6 @@ function solve() {
         });
     }
 
-    // for (let card of playerTwoDiv.children) {
     for (let card = 0; card < playerTwoDiv.length; card++) {
         let cardImgElement = playerTwoDiv[card];
 
@@ -73,8 +67,6 @@ function solve() {
                     leftCardImg.setAttribute("style", "border: 2px solid green");
                     rightCardImg.setAttribute("style", "border: 2px solid red");
 
-                    // let newSpanElement = document.createElement("span");
-                    // newSpanElement.innerHTML = `[${leftCardValue} vs ${rightCardValue}] `;
                     historyDiv.innerHTML += `[${leftCardValue} vs ${rightCardValue}] `;
 
                     leftCardChoice.innerHTML = "";
@@ -83,8 +75,6 @@ function solve() {
                     rightCardImg.setAttribute("style", "border: 2px solid green");
                     leftCardImg.setAttribute("style", "border: 2px solid red");
 
-                    // let newSpanElement = document.createElement("span");
-                    // newSpanElement.innerHTML = `[${leftCardValue} vs ${rightCardValue}] `;
                     historyDiv.innerHTML += `[${leftCardValue} vs ${rightCardValue}] `;
                     leftCardChoice.innerHTML = "";
                     rightCardChoice.innerHTML = "";
