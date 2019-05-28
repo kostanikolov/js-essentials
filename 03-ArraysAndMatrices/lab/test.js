@@ -1,12 +1,6 @@
-function main() {
+function main(params) {
 
-    let arr = [ 1,2,3,4 ];
-
-    let n = 2;
-
-    let a = arr.slice(0, n);
-    console.log(Array.isArray(a));
-   
+    console.log(params[1][2]);
 }
 
-main();
+main([[10, 20, 30], [40, 50]]);
