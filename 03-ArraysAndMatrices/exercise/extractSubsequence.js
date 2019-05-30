@@ -4,7 +4,7 @@ function solve(params) {
     let resultArr = [currMax];
 
     for (let index = 1; index < params.length; index++) {
-        if (params[index] > currMax) {
+        if (params[index] >= currMax) {
             currMax = params[index];
             resultArr.push(currMax);
         }
