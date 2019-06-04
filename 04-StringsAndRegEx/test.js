@@ -1,13 +1,10 @@
 function main(args) {
-    
-    let arr = [10,20,30];
 
-    if (true) {
-        let arr = ['gosho', 'pesho'];
-        console.log(arr); // ['gosho', 'pesho']
-    }
+    var months = ['Jan', 'March', 'April', 'June'];
+    months.splice(1, 1);
 
-    console.log(arr); // [10, 20, 30]
+    //console.log(el);
+    console.log(months);
 }
 
 main();
