@@ -1,13 +1,9 @@
 function main(args) {
     
-    let arr = [10,20,30];
+    let arr = [...args];
 
-    if (true) {
-        let arr = ['gosho', 'pesho'];
-        console.log(arr); // ['gosho', 'pesho']
-    }
+    console.log(arr);
 
-    console.log(arr); // [10, 20, 30]
 }
 
-main();
+main([10,20,30]);
