@@ -29,11 +29,9 @@ function solve(commands) {
                 for (let i = 0; i < banknotesInATM.length; i++) {
                     let currBanknote = banknotesInATM[i];
 
-                    // 35
-                    if (currBanknote > withdrawingMoney) {
-                        // skip
-                    } else {
+                    if (currBanknote <= withdrawingMoney) {
                         withdrawSum += currBanknote;
+                        
                         if (withdrawSum > withdrawingMoney) {
                             withdrawSum -= currBanknote;
                             continue;
